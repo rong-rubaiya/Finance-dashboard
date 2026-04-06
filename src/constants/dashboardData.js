@@ -3,7 +3,7 @@ export const DASHBOARD_DATA = {
     {
       id: "balance",
       title: "Current Balance",
-      value: "$ 6,558.85", // (Total Income - Total Expense)
+      value: "$ 6,558.85",
       amount: 6558.85,
       gradient: "from-orange-500 to-amber-600",
       trend: "up"
@@ -11,7 +11,7 @@ export const DASHBOARD_DATA = {
     {
       id: "income",
       title: "Total Income",
-      value: "$ 10,050.00", // (450 + 1200 + 5000 + 2500 + 900)
+      value: "$ 10,050.00",
       amount: 10050.00,
       gradient: "from-teal-500 to-green-600",
       trend: "up"
@@ -19,7 +19,7 @@ export const DASHBOARD_DATA = {
     {
       id: "expenses",
       title: "Total Expenses",
-      value: "$ 3,491.15", // (120.50 + 85 + 210 + 300 + 45 + categorized items)
+      value: "$ 3,491.15",
       amount: 3491.15,
       gradient: "from-yellow-500 to-amber-600",
       trend: "down"
@@ -41,7 +41,6 @@ export const DASHBOARD_DATA = {
       { day: '15', income: 2500, expenses: 300 },
       { day: '16', income: 900, expenses: 45 }
     ],
-   
     categories: [
       { name: 'Loan Deposit', value: 5000, color: '#3b82f6' },
       { name: 'Payroll', value: 2500, color: '#10b981' },
@@ -61,5 +60,47 @@ export const DASHBOARD_DATA = {
     { id: 8, name: "Salary Transary", date: "15/04/23", time: "08:30 AM", amount: "$2,500.00", status: "Completed", type: "income", avatar: "https://i.pravatar.cc/150?u=8", category: "Payroll" },
     { id: 9, name: "David Miller", date: "16/04/23", time: "02:10 PM", amount: "$45.00", status: "Completed", type: "expense", avatar: "https://i.pravatar.cc/150?u=9", category: "Travel" },
     { id: 10, name: "Emma Wilson", date: "16/04/23", time: "05:55 PM", amount: "$900.00", status: "Completed", type: "income", avatar: "https://i.pravatar.cc/150?u=10", category: "Consulting" }
+  ],
+  upcomingData: [
+    { 
+      id: "UT-9921", 
+      label: "Adobe Creative Cloud", 
+      from_to: "Adobe Systems Inc.", // Merchant/Recipient
+      amount: "-$54.99", 
+      date: "April 18, 2026", 
+      type: "expense",
+      category: "Subscription",
+      method: "Auto-Debit"
+    },
+    { 
+      id: "UT-9922", 
+      label: "Inbound: Freelance Project", 
+      from_to: "TechFlow Solutions", // Source of Income
+      amount: "+$1,200.00", 
+      date: "April 20, 2026", 
+      type: "income",
+      category: "Project Pay",
+      method: "Bank Transfer"
+    },
+    { 
+      id: "UT-9923", 
+      label: "Office Space Rent", 
+      from_to: "Skyline Properties", // Landlord/Recipient
+      amount: "-$850.00", 
+      date: "May 01, 2026", 
+      type: "expense",
+      category: "Utilities",
+      method: "E-Check"
+    },
+    { 
+      id: "UT-9924", 
+      label: "Node Maintenance Bonus", 
+      from_to: "Global_Audit HQ", // Internal Source
+      amount: "+$350.00", 
+      date: "May 05, 2026", 
+      type: "income",
+      category: "Bonus",
+      method: "Internal Wallet"
+    }
   ]
 };

@@ -71,7 +71,7 @@ export default function AnalyticsSection() {
             </span>
           </div>
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-950 dark:text-white">
-            {isAdmin ? "Financial Intelligence_" : "Growth Insights_"}
+            {isAdmin ? "Financial Intelligence_" : "Growth Insights_"}<span className="text-purple-600">.</span>
           </h2>
         </div>
 

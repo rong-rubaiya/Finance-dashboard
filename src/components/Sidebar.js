@@ -5,7 +5,8 @@ import { usePathname } from 'next/navigation';
 import { 
   LayoutDashboard, Wallet, ArrowLeftRight, PieChart, 
   Users, Settings, LogOut,
-  X, 
+  X,
+  Clock, 
 } from 'lucide-react';
 
 const Sidebar = ({ isOpen, setIsOpen }) => { 
@@ -20,7 +21,11 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
     { icon: LayoutDashboard, label: 'Overview', href: '/' },
     { icon: PieChart, label: 'Analytics', href: '/analytics' },
     { icon: ArrowLeftRight, label: 'Transactions', href: '/transactions' },
-    { icon: Wallet, label: 'Accounts', href: '/accounts' },
+    { 
+  icon: Clock, 
+  label: 'Upcoming', 
+  href: '/upcoming',
+},
     { icon: Users, label: 'Team', href: '/team' },
   ];
 

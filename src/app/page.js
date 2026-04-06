@@ -9,7 +9,7 @@ export default function DashboardPage() {
       {/* Dynamic Header */}
       <div className="mb-10 flex flex-col gap-1">
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-950 dark:text-white">
-          Financial Dashboard
+          Financial Dashboard<span className="text-purple-600">.</span>
         </h1>
         <p className="text-sm font-medium text-gray-500">
           Good morning, Rubaiya. Check your balance trend and summary cards below.
